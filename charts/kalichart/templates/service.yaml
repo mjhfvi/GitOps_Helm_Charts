@@ -1,0 +1,47 @@
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: {{ include "kalichart.fullname" . }}
+#   labels:
+#     {{- include "kalichart.labels" . | nindent 4 }}
+# spec:
+#   type: {{ .Values.service.type }}
+#   ports:
+#     - port: {{ .Values.service.port }}
+#       targetPort: http
+#       protocol: TCP
+#       name: http
+#   selector:
+#     {{- include "kalichart.selectorLabels" . | nindent 4 }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "kalichart.fullname" . }}
+  labels:
+    {{- include "kalichart.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.http.type }}
+  ports:
+    - port: {{ .Values.service.http.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "kalichart.selectorLabels" . | nindent 4 }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "kalichart.fullname" . }}
+  labels:
+    {{- include "kalichart.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.https.type }}
+  ports:
+    - port: {{ .Values.service.https.port }}
+      targetPort: https
+      protocol: TCP
+      name: https
+  selector:
+    {{- include "kalichart.selectorLabels" . | nindent 4 }}

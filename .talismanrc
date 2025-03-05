@@ -1,0 +1,13 @@
+---
+fileignoreconfig:
+  - filename: .yamllint
+    checksum: 68d946e0e992a12d5bfb0c07a0aa1a69adec8f2b8624443b968e28b6297dec6e
+  - filename: charts/kalichart/templates/ingress.yaml
+    checksum: c1a7b8d23396f9f7731d27ec0b5c3a62800a3cc6720ae646aac4ae1d6f84b215
+  - filename: .gitleaks.toml
+    checksum: fff57693c33ca6f1d75c0005d4f55b511c3bcedaabaaa68c565dfd0a26d81db9
+  - filename: charts/kalichart/values.yaml
+    checksum: 2e2f0e883429e6917f357dc71848b300c36df14b3b2ef961f1112d98c7586c4a
+  - filename: .pre-commit-config.yaml
+    checksum: f5f1675f9d755e1f3056d30e1935d3b20f2c06c6eb7f72f78be5dcd559039fac
+version: ""
