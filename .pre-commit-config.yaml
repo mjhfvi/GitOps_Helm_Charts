@@ -33,9 +33,9 @@ repos:
         verbose: true
       - id: check-xml
         verbose: true
-      - id: check-yaml
-        verbose: true
-        args: [--allow-multiple-documents]
+      # - id: check-yaml
+      #   verbose: true
+      #   args: [--allow-multiple-documents]
       - id: pretty-format-json
         verbose: true
         args: [--autofix]

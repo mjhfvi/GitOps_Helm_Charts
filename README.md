@@ -1,12 +1,19 @@
-# <font color="orange">Kali Linus Helm Chart Project</font>
+# <font color="orange">Kali Linux Helm Chart Project</font>
 
 ## 📌 <font color="purple">Overview</font>
 
 This repository is designed to deploy a kali linux distribution for kubernetes for network debugging in docker container using helm
 
+## 🧰 <font color="purple">Projects list</font>
+
+**kali linux**: deploy kali linux desktop pod in kubernetes\
+**VSCode**: deploy VSCode desktop pod in kubernetes\
+**Chromium**: deploy Chromium browser pod in kubernetes\
+**Terminal**: deploy Terminal pod in kubernetes
+
 ## 🎯 <font color="purple">Key Features</font>
 
-- **helm Chart**: deploy kali linux desktop environment with web UI over HTTP
+- **helm Chart**: deploy applications and desktop environment with web UI over HTTP
 
 ## 🛠️ <font color="purple">Tech Stack</font>
 
@@ -24,9 +31,40 @@ Ensure you have the following tools installed:
 - Helm
 - Helmfile
 
+## 🏃 <font color="purple">Run Deployment</font>
+
+### Helm
+
+cd charts/**'Project Name'**\
+
+helm install **'Project Name'** --values=values.yaml .
+
+🌋 Cleanup\
+helm uninstall **'Project Name'**
+
+### Helmfile
+
+cd ./helmfile
+
+helmfile apply -f helmfile-**'Project Name'**.yml
+
+🌋 Cleanup
+
+helmfile delete -f helmfile-**'Project Name'**.yml
+
 ## 🔒 <font color="purple">Security Controls Implemented</font>
 
-## 📌 <font color="purple">Future Enhancements</font>
+## ⚙️ <font color="purple">Future Enhancements</font>
+
+## 📡 <font color="purple">Projects & Acknowledgments</font>
+
+This project relies on various open-source tools and services. \
+A huge thanks to the amazing projects that make this possible:
+
+- [linuxserver](https://github.com/linuxserver)
+- [raonigabriel](https://github.com/raonigabriel/web-terminal)
+
+If your project benefits from these technologies, consider supporting their development! 🚀
 
 ## 📧 <font color="purple">Contact</font>
 

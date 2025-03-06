@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-name: kali-linux-chart
-description: Helm chart for Kubernetes Troubleshooting
+name: codeserver
+description: A Helm chart for Kubernetes
 
 # A chart can be either an 'application' or a 'library' chart.
 #
@@ -22,4 +22,27 @@ version: 0.1.0
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
-appVersion: "0.1.1"
+appVersion: "1.0.0"
+
+annotations:
+  category: Infrastructure
+  images: |
+    - name: codeserver
+      image: linuxserver/codeserver:latest
+
+home: https://github.com/mjhfvi/GitOps_Helm_Charts
+# icon:
+keywords:
+  - codeserver
+  - linux
+  - webui
+  - http
+  - web
+  - application
+
+maintainers:
+  - name: Tzahi Cohen
+    url: https://github.com/mjhfvi/GitOps_Helm_Charts
+
+sources:
+  - https://github.com/mjhfvi/GitOps_Helm_Charts
